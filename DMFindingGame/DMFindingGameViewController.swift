@@ -20,26 +20,11 @@ class DMFindingGameViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     
-  
-    @IBAction func letterButton(_ sender: Any) {
-        
-//        var buttonPressed =
-//        UIButton(named: "Button1"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button3"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button2")
-//
-        
-    }
+    
+
+    @IBOutlet var letterButtons: [UIButton]!
+    
+
     
     /**
      These variables will help us with the gameplay. You do not need to modify this code.
@@ -83,7 +68,7 @@ class DMFindingGameViewController: UIViewController {
         
         var lettersFound = [targetLetter]
         
-        for _ in 1...numLetters - 1 {
+        for _ in 2...numLetters {
             
             var temporaryLetter: String
             
@@ -112,7 +97,9 @@ class DMFindingGameViewController: UIViewController {
      Feel free to run the provided test in `DMFindingGameTests` to know if your code is correct.
      */
     func calculateNewScore(selectedLetter: String) {
-        
+        if (selectedLetter == targetLetter) {
+            score += 1
+        }
     }
     
     /**
@@ -120,19 +107,39 @@ class DMFindingGameViewController: UIViewController {
      6.2 Call the `calculateNewScore` function and pass in the selected letter. Hint: You can get access to the selected letter using the `sender`'s `titleLabel`. Afterwards, call the `updateScoreLabel` function.
      6.3 Call the `newRound` function to start a new round.
      */
+    @IBAction func letterButton(_ sender: UIButton) {
+        
+        calculateNewScore(selectedLetter: sender.currentTitle!)
+        updateScoreLabel()
+        newRound()
+//        var buttonPressed = [
+//        UIButton(named: "Button1"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button3"),
+//        UIButton(named: "Button4"),
+//        UIButton(named: "Button5"),
+//        UIButton(named: "Button6"),
+//        UIButton(named: "Button7"),
+//        UIButton(named: "Button8"),
+//        UIButton(named: "Button9"),
+//        UIButton(named: "Button10"),
+//        UIButton(named: "Button11"),
+//        UIButton(named: "Button12")]
+    }
+    
     
     /**
      7.1 Update the `targetLetterLabel`'s text to be the `targetLetter`.
      */
     func updateTargetLetterLabel() {
-        
+        targetLetterLabel.text = targetLetter
     }
     
     /**
      8.1 Update the `scoreLabel`'s text to be the `score`.
      */
     func updateScoreLabel() {
-        
+        scoreLabel.text = String(score)
     }
     
     /**
@@ -140,6 +147,12 @@ class DMFindingGameViewController: UIViewController {
      Hint: `UIButton`s have a `setTitle` function.
      */
     func updateLetterButtons() {
+        
+        for (index, letter) in randomLetters.enumerated(){
+                        
+            print(letter)
+            letterButtons[index].setTitle(letter, for: .normal)
+        }
         
     }
 }

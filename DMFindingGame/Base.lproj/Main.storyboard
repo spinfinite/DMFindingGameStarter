@@ -17,14 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw9-Md-YtP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw9-Md-YtP">
                                 <rect key="frame" x="285" y="70" width="55" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPv-MZ-Xj6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Letter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPv-MZ-Xj6">
                                 <rect key="frame" x="159" y="135" width="73" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
@@ -42,7 +43,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Yf2-X1-hVu"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="8WD-SH-ch6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQZ-JQ-OMn" userLabel="Button2">
@@ -55,7 +56,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="xKw-4x-5Uu"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="mlB-8p-TMn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmq-cD-oHN" userLabel="Button3">
@@ -68,7 +69,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="pYb-Nl-gon"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="R3q-4d-85S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLv-qX-vsZ" userLabel="Button4">
@@ -81,7 +82,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="p4o-lt-XvX"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Dnr-O8-kW4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-wO-bVT" userLabel="Button5">
@@ -94,7 +95,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="grv-0m-ZHI"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="v08-bN-gT8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS7-qf-DFP" userLabel="Button6">
@@ -107,7 +108,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="GkL-7b-Uju"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="RPc-Ut-zsT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHD-Ev-ajf" userLabel="Button7">
@@ -120,7 +121,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="h3r-q9-z7q"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="LAV-ex-4HD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-mx-OR0" userLabel="Button8">
@@ -133,7 +134,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="3m4-I2-jup"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="pq0-5p-BTA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-db-3yw" userLabel="Button9">
@@ -146,7 +147,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="IDx-Qm-3ab"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="cwp-Ve-GBV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYL-EQ-93Y" userLabel="Button10">
@@ -159,7 +160,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="KE8-WU-qbW"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Brv-o0-vHJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abE-L2-QSW" userLabel="Button11">
@@ -172,7 +173,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="RuW-Gd-h3w"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Yud-Gt-IES"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQH-VI-KxY" userLabel="Button12">
@@ -185,7 +186,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Mpm-eX-NfR"/>
+                                    <action selector="letterButton:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="lrd-Sg-017"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,6 +196,19 @@
                     <connections>
                         <outlet property="scoreLabel" destination="dw9-Md-YtP" id="uyZ-zg-E4K"/>
                         <outlet property="targetLetterLabel" destination="KPv-MZ-Xj6" id="aM3-bC-Vd3"/>
+                        <outletCollection property="letterButtons" destination="Buf-wR-4GK" collectionClass="NSMutableArray" id="WSA-XF-A3u"/>
+                        <outletCollection property="letterButtons" destination="Buf-wR-4GK" collectionClass="NSMutableArray" id="Hct-f0-6Wi"/>
+                        <outletCollection property="letterButtons" destination="RQZ-JQ-OMn" collectionClass="NSMutableArray" id="bJP-J9-EzX"/>
+                        <outletCollection property="letterButtons" destination="fmq-cD-oHN" collectionClass="NSMutableArray" id="icq-c0-gaD"/>
+                        <outletCollection property="letterButtons" destination="qLv-qX-vsZ" collectionClass="NSMutableArray" id="eVF-Pw-Yd6"/>
+                        <outletCollection property="letterButtons" destination="o5a-wO-bVT" collectionClass="NSMutableArray" id="6bb-ch-xmI"/>
+                        <outletCollection property="letterButtons" destination="YS7-qf-DFP" collectionClass="NSMutableArray" id="IOg-Zm-Znc"/>
+                        <outletCollection property="letterButtons" destination="wHD-Ev-ajf" collectionClass="NSMutableArray" id="A2W-if-zmP"/>
+                        <outletCollection property="letterButtons" destination="zAa-mx-OR0" collectionClass="NSMutableArray" id="MZR-bG-wkx"/>
+                        <outletCollection property="letterButtons" destination="z6p-db-3yw" collectionClass="NSMutableArray" id="PhH-vt-VCU"/>
+                        <outletCollection property="letterButtons" destination="eYL-EQ-93Y" collectionClass="NSMutableArray" id="7mH-KP-R0o"/>
+                        <outletCollection property="letterButtons" destination="abE-L2-QSW" collectionClass="NSMutableArray" id="gE2-Zk-e5R"/>
+                        <outletCollection property="letterButtons" destination="SQH-VI-KxY" collectionClass="NSMutableArray" id="G0i-aW-3rP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b22-Od-7or" sceneMemberID="firstResponder"/>
@@ -211,6 +225,9 @@
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
