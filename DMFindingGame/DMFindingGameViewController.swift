@@ -19,6 +19,28 @@ class DMFindingGameViewController: UIViewController {
     @IBOutlet weak var targetLetterLabel: UILabel!
     
     @IBOutlet weak var scoreLabel: UILabel!
+    
+  
+    @IBAction func letterButton(_ sender: Any) {
+        
+//        var buttonPressed =
+//        UIButton(named: "Button1"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button3"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2"),
+//        UIButton(named: "Button2")
+//
+        
+    }
+    
     /**
      These variables will help us with the gameplay. You do not need to modify this code.
      */
@@ -42,6 +64,13 @@ class DMFindingGameViewController: UIViewController {
      */
     func newRound() {
         
+        targetLetter = letters[Int.random(in: 0...25)]
+        print(targetLetter)
+        randomLetters = generateRandomLetters(numLetters: 12)
+        print(randomLetters)
+        updateTargetLetterLabel()
+        updateLetterButtons()
+        
     }
     
     /**
@@ -51,7 +80,31 @@ class DMFindingGameViewController: UIViewController {
      This is a tricky function, but feel free to run the provided test in `DMFindingGameTests` to know if your code is correct. Let your Tech Lead know if you need help. :)
      */
     func generateRandomLetters(numLetters: Int) -> [String] {
-        return []
+        
+        var lettersFound = [targetLetter]
+        
+        for _ in 1...numLetters - 1 {
+            
+            var temporaryLetter: String
+            
+            repeat {
+                //lettersFound.append(letters.randomElement()!)
+                //print(lettersFound)
+                temporaryLetter = letters.randomElement()!
+                
+            } while (lettersFound.contains(temporaryLetter))
+            
+            lettersFound.append(temporaryLetter)
+//        for lettersList in letters {
+//            var temporaryLetter = letters[Int.random(in: 0...25)]
+//            if(targetLetter != temporaryLetter){
+//                lettersFound += temporaryLetter
+//            }
+//
+        }
+            
+            
+        return lettersFound
     }
     
     /**
