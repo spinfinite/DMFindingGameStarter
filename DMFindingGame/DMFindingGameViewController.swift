@@ -51,8 +51,8 @@ class DMFindingGameViewController: UIViewController {
         
         targetLetter = letters[Int.random(in: 0...25)]
         print(targetLetter)
-        randomLetters = generateRandomLetters(numLetters: 12)
-        print(randomLetters)
+        randomLetters = generateRandomLetters(numLetters: 11)
+        //print(randomLetters.rando)
         updateTargetLetterLabel()
         updateLetterButtons()
         
@@ -68,7 +68,7 @@ class DMFindingGameViewController: UIViewController {
         
         var lettersFound = [targetLetter]
         
-        for _ in 2...numLetters {
+        for _ in 0...numLetters {
             
             var temporaryLetter: String
             
@@ -80,6 +80,7 @@ class DMFindingGameViewController: UIViewController {
             } while (lettersFound.contains(temporaryLetter))
             
             lettersFound.append(temporaryLetter)
+          
 //        for lettersList in letters {
 //            var temporaryLetter = letters[Int.random(in: 0...25)]
 //            if(targetLetter != temporaryLetter){
@@ -87,8 +88,9 @@ class DMFindingGameViewController: UIViewController {
 //            }
 //
         }
-            
-            
+        
+        print(lettersFound)
+        
         return lettersFound
     }
     
@@ -112,19 +114,6 @@ class DMFindingGameViewController: UIViewController {
         calculateNewScore(selectedLetter: sender.currentTitle!)
         updateScoreLabel()
         newRound()
-//        var buttonPressed = [
-//        UIButton(named: "Button1"),
-//        UIButton(named: "Button2"),
-//        UIButton(named: "Button3"),
-//        UIButton(named: "Button4"),
-//        UIButton(named: "Button5"),
-//        UIButton(named: "Button6"),
-//        UIButton(named: "Button7"),
-//        UIButton(named: "Button8"),
-//        UIButton(named: "Button9"),
-//        UIButton(named: "Button10"),
-//        UIButton(named: "Button11"),
-//        UIButton(named: "Button12")]
     }
     
     
